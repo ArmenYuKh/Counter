@@ -17,7 +17,7 @@ public class CounterControllerTest {
         counterStorage.putCounter("name2", 2);
         counterStorage.putCounter("name3", 3);
         assertThat(counterStorage.getSumValues()).isEqualTo(6);
-        System.out.println("Тест пройдёен успешно! Полученная сумма верна.");
+        System.out.println("Тест пройден успешно! Полученная сумма верна.");
     }
 
     @Test
@@ -30,6 +30,6 @@ public class CounterControllerTest {
         assertThat(counterStorage.getCounterNames().contains("name1")).isEqualTo(true);
         assertThat(counterStorage.getCounterNames().contains("name2")).isEqualTo(true);
         assertThat(counterStorage.getCounterNames().contains("name3")).isEqualTo(true);
-        System.out.println("Тест пройдёен успешно! Получен верный список счётчиков.");
+        System.out.println("Тест пройден успешно! Получен верный список счётчиков.");
     }
 }
