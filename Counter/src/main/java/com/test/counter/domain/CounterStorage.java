@@ -11,10 +11,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class CounterStorage {
     public ConcurrentHashMap<String, Integer> counterStorage;
 
-    public ConcurrentHashMap<String, Integer> getCounterStorage() {
-        return counterStorage;
-    }
-
     public CounterStorage() {
         counterStorage = new ConcurrentHashMap<>();
     }
