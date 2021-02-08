@@ -28,13 +28,13 @@ public class CounterStorage {
     }
 
     public Integer getCounterValue(String name) {
-        Integer integer = null;
+        Integer counterValue = null;
         if (counterStorage.get(name) == null) {
             System.out.println("Счётчик с указанным именем не существует!");
         } else {
-            integer = counterStorage.get(name);
+            counterValue = counterStorage.get(name);
         }
-        return integer;
+        return counterValue;
     }
 
     public void deleteCounter(String name) {
