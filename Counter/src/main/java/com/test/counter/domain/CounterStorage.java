@@ -9,7 +9,11 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class CounterStorage {
-    private ConcurrentHashMap<String, Integer> counterStorage;
+    public ConcurrentHashMap<String, Integer> counterStorage;
+
+    public ConcurrentHashMap<String, Integer> getCounterStorage() {
+        return counterStorage;
+    }
 
     public CounterStorage() {
         counterStorage = new ConcurrentHashMap<>();
